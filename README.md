@@ -82,4 +82,55 @@ It has the following components:
 ### XML Schema
 It is the legal formal of an XML Document
 
-## JSON (JavaScript Object Notation)
+### JSON (JavaScript Object Notation)
+
+# Object Oriented Programming using Pyhton
+
+
+<b>Class:</b> A template
+<br/>
+<b>Method or Message:</b> Capability of a class
+<br/>
+<b>Field or Attribute: </b> A bit of data in a class
+<br/>
+<b>Object:</b> A particular instance of a class
+
+```
+class Party:
+	x = 0
+	def partyOn(self):
+		self.x = self.x + 1
+		print("So far: " + self.x)
+
+an = Party()
+an.partyOn()
+```
+- Self is a parameter that is fed automatically and referres to the instance of the class. Like 'this' in javascript
+
+- It referes to the 'instance' in which the method is being called
+
+```
+dir(an)
+```
+- This function output shows us what all methods and variables are availble in the class
+
+### Constructor
+
+```
+class Party:
+	def __init__ (self):
+		print("I am constructed!)
+	...
+
+```
+
+### Destructor
+
+```
+class Party:
+
+	...
+
+	def __del__ (self):
+		print("I am destructed!)
+```
